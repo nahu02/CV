@@ -26,7 +26,7 @@ jobs:
       - uses: docker://pandoc/latex:2.9
         with:
           args: >-
-            --output=out/result.pdf \
+            --output=out/result.pdf 
             ${{ steps.files_list.outputs.files }}
       
       - name: Upload PDFs as artifacts
