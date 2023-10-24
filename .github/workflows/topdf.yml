@@ -19,7 +19,7 @@ jobs:
     needs: check_run
     steps:
       - uses: actions/checkout@v2
-      - uses: nahu02/action-jsonresume-export-abel@v1
+      - uses: nahu02/action-jsonresume-export-abel@v2
         name: Export resume as PDF
         with:
           resume_filepath: resume_en.json
