@@ -23,15 +23,15 @@ jobs:
         name: Export resume as PDF
         with:
           resume_filepath: resume_en.json
-          output_filepath: docs/index.html
-      - name: Commit published HTML
+          output_filepath: docs/resume_en.pdf
+      - name: Commit published PDF
         id: commit
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          if [ -n "$(git status --porcelain docs/index.html)" ]; then
-            git add docs/index.html
-            git commit -m "[ci skip] chore(docs/index.html): update resume page"
+          if [ -n "$(git status --porcelain docs/resume_en.pdf)" ]; then
+            git add docs/resume_en.pdf
+            git commit -m "[ci skip] chore(docs/resume_en.pdf): update resume page"
             echo ::set-output name=exit_code::0
           else
             echo ::set-output name=exit_code::1
