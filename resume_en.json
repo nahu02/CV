@@ -1,0 +1,144 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Abel Nagy",
+    "label": "Your future intern",
+    "image": "",
+    "email": "nahu1002@gmail.com",
+    "phone": "+36302335345",
+    "summary": "It is my mission to fight the 'antisocial nerd' stereotype - I consider myself a social nerd. I like solving problems and I enjoy sharing that passion of mine with others. Apart from IT I enjoy helping people and explaining complex concepts.",
+    "location": {
+      "address": "25, Csata utca",
+      "postalCode": "1135",
+      "city": "Budapest",
+      "region": "Hungary"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "url": "https://github.com/nahu02"
+      },
+      {
+        "network": "LinkedIn",
+        "url": "https://linkedin.com/in/abel-nagy-hu"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "BlackRock",
+      "location": "Budapest, HU",
+      "description": "Feduciary and financial software developer company",
+      "position": "Data Solutions intern",
+      "url": "http://blackrock.com",
+      "startDate": "2023-06-05",
+      "endDate": "2024-05-28",
+      "summary": "Working on moving to sell data instead of a platform",
+      "highlights": [
+        "Updated 127+ Million incorrect records in a production database"
+      ]
+    },
+    {
+      "name": "BME, International Mentor Team",
+      "location": "Budapest, HU",
+      "description": "Student group for helping foreign students",
+      "position": "International Mentor",
+      "url": "http://imt.bme.hu",
+      "startDate": "2022-03-01",
+      "summary": "Guiding international students.",
+      "highlights": [
+        "Leding a team of 7 mentors in charge of helping with medical care since July 2023",
+        "Organized the room change for 91 people in a dormitory that had 14 free spaces"
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Ifjusagi Nomad Klub",
+      "position": "Project Coordinator, Facilitator",
+      "url": "https://ifjusaginomadklub.org/",
+      "startDate": "2021-03-01",
+      "endDate": "2021-09-30",
+      "summary": "Promoting personal development of young people.",
+      "highlights": [
+        "Coordinated 2 Youth Exchanges, which were marked by the National Agency as Good Practice and were given 94 and 98 points out of 100 at the final evaluation",
+        "Arranged the travel details and booked accommodation for a total of 114 people for a combined 23 days",
+        "Held workshops on an 11-day exchange for 56 young participants (aged 15-20) about digital literacy, project management and public speaking"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Budapest University of Technology and Economics",
+      "url": "https://www.vik.bme.hu/en/",
+      "area": "Computer Engineer",
+      "studyType": "Bachelor",
+      "startDate": "2021-09-01",
+      "endDate": "2025-01-31",
+      "score": "3.56",
+      "courses": [
+        "Programming 1 - Introduction to Programming in C",
+        "Programming 2 - Introduction to OO Design in C++",
+        "Programming 3 - Advanced OO Design in Java",
+        "Theory of Algorithms",
+        "Data-Driven Systems",
+        "Mobile and Web Development"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Project",
+      "startDate": "2019-01-01",
+      "endDate": "2021-01-01",
+      "description": "Description...",
+      "highlights": [
+        "Won award at AIHacks 2016"
+      ],
+      "url": "https://project.com/"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Programming languages",
+      "level": "Advanced",
+      "keywords": [
+        "C",
+        "C++",
+        "C#",
+        "Java",
+        "Python"
+      ]
+    },
+    {
+      "name": "Databases",
+      "level": "Intermediate",
+      "keywords": [
+        "MSSQL",
+        "Sybase",
+        "MongoDB"
+      ]
+    },
+    {
+      "name": "Web development",
+      "level": "Beginner",
+      "keywords": [
+        "Django"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Fluent"
+    },
+    {
+      "language": "Hungarian",
+      "fluency": "Native speaker"
+    }
+  ],
+  "meta": {
+    "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json",
+    "version": "v1.0.0"
+  }
+}
