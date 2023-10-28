@@ -24,21 +24,8 @@ jobs:
         with:
           resume_filepath: resume_en.json
           output_filepath: docs/resume_en.pdf
-      - name: Commit published PDF
-        id: commit
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          if [ -n "$(git status --porcelain docs/resume_en.pdf)" ]; then
-            git add docs/resume_en.pdf
-            git commit -m "[ci skip] chore(docs/resume_en.pdf): update resume page"
-            echo ::set-output name=exit_code::0
-          else
-            echo ::set-output name=exit_code::1
-          fi
-      - name: Push changes
-        uses: ad-m/github-push-action@master
-        if: steps.commit.outputs.exit_code == 0
+      - uses: actions/upload-artifact@v2
+        name: Create artifact
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ github.ref }}
+          name: resume
+          path: docs/resume_en.pdf
