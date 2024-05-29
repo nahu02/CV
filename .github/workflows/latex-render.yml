@@ -2,6 +2,9 @@ name: LateX to PDF
 
 on:
   push:
+    branches: 
+      - main
+      - latex-resume
     tags:
        - '*'
   pull_request:
