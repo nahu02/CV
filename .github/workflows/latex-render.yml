@@ -2,9 +2,6 @@ name: LateX to PDF
 
 on:
   push:
-    branches: 
-      - main
-      - latex-resume
     tags:
        - '*'
   pull_request:
@@ -61,12 +58,24 @@ jobs:
         with:
           name: resume
 
+      - name: Get the latest release number
+        id: get_latest_release
+        run: |
+          latest_release=$(curl --silent "https://api.github.com/repos/${{ github.repository }}/releases/latest" | jq -r '.name')
+          if [[ $latest_release =~ Release\ ([0-9]+) ]]; then
+            release_number=${BASH_REMATCH[1]}
+            next_release_number=$((release_number + 1))
+          else
+            next_release_number=1
+          fi
+          echo "::set-output name=next_release_number::$next_release_number"
+
       # Create a release
       - name: Create Release
         if: needs.build_latex.outputs.CommitsSinceVersionSource > 0 #Only release if there has been a commit/version change
         uses: ncipollo/release-action@v1
         with:
           tag: ${{ needs.build_latex.outputs.Version }}
-          name: Release ${{ needs.build_latex.outputs.Version }}
+          name: Release ${{ steps.get_latest_release.outputs.next_release_number }}
           artifacts: "resume/*"
           token: ${{ secrets.RELEASE_PUBLISH_TOKEN }}
