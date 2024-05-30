@@ -55,7 +55,7 @@ jobs:
       - name: Download PDF artifact
         uses: actions/download-artifact@v4
         with:
-          path: resume # this is the name of the folder WITHIN /resume. However, if path is ommited, the artifact is placed in /.
+          path: ~/resume
       
       - name: List files in current directory
         run: tree -a
@@ -79,6 +79,6 @@ jobs:
         with:
           tag: ${{ needs.build_latex.outputs.Version }}
           name: CV render v${{ steps.get_latest_release.outputs.next_release_number }}
-          artifacts: "resume/resume/*" # I have no clue why there are two resume folders
+          artifacts: "resume/*"
           artifactErrorsFailBuild: true
           token: ${{ secrets.RELEASE_PUBLISH_TOKEN }}
