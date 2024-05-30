@@ -57,7 +57,7 @@ jobs:
       - name: Download PDF artifact
         uses: actions/download-artifact@v4
         with:
-          path: resume
+          name: resume
 
       - name: Get the latest release number
         id: get_latest_release
@@ -78,6 +78,6 @@ jobs:
         with:
           tag: ${{ needs.build_latex.outputs.Version }}
           name: CV render v${{ steps.get_latest_release.outputs.next_release_number }}
-          artifacts: "resume/*"
+          artifacts: "resume"
           artifactErrorsFailBuild: true
           token: ${{ secrets.RELEASE_PUBLISH_TOKEN }}
