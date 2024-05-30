@@ -55,7 +55,7 @@ jobs:
       - name: Download PDF artifact
         uses: actions/download-artifact@v4
         with:
-          name: resume
+          path: resume.pdf
       
       - name: List files in current directory
         run: tree -a
@@ -79,6 +79,6 @@ jobs:
         with:
           tag: ${{ needs.build_latex.outputs.Version }}
           name: CV render v${{ steps.get_latest_release.outputs.next_release_number }}
-          artifacts: "resume"
+          artifacts: "resume.pdf"
           artifactErrorsFailBuild: true
           token: ${{ secrets.RELEASE_PUBLISH_TOKEN }}
