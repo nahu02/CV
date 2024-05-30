@@ -23,7 +23,7 @@
 
 \documentclass[
 	a4paper, % Uncomment for A4 paper size (default is US letter)
-	12pt, % Default font size is 11, can use 10pt, 11pt or 12pt
+	11pt, % Default font size is 11, can use 10pt, 11pt or 12pt
 ]{resume} % Use the resume class
 
 \usepackage[sfdefault]{FiraSans} % Use the Fira Sans font
@@ -51,7 +51,6 @@
 
 	\begin{rSubsection}{Budapest University of Technology and Economics}{Exp. January 2025}{Bachelor in Computer Engineering}{Budapest, HU}
 		\item Developed a strong foundation in Object-Oriented Programming, Algorithms and Data Structures, Software Engineering and Design, Artificial Intelligence, Mobile and Web Development
-		\item Gained practical experience in .NET Development through personal projects
 		\item As a member of the International Mentor Team, I led a team of 7 mentors in charge of helping with medical care
 	\end{rSubsection}
 
@@ -83,14 +82,19 @@
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{Personal and School Projects}
-	% TODO: Use the rProjectsection environment to list personal/school projects
 
 	\begin{rSubsection}{EventSnap}{}{AI Android app}{\href{https://github.com/nahu02/EventSnap}{View On GitHub}}
-		\item A .NET MAUI Android app that uses Natural Language Processing to convert text into calendar events, for seamless calendar integration.
+		\item .NET MAUI Android app that uses Natural Language Processing to parse text into calendar events.
+		\item Intuitive UI that allows users to easily add events to any calendar app.
 	\end{rSubsection}
 
-	\begin{rSubsection}{CV Automatization}{}{Automatization utilising GitHub Actions}{\href{https://github.com/nahu02/CV}{View On GitHub}}
-		\item Created a GitHub repository with an automated workflow, that renders my resume from a \LaTeX{} file to make the process of updating it and tracking the changes easier.
+	\begin{rSubsection}{EncoderHub Core}{}{.NET class library}{\href{https://github.com/nahu02/EncoderHubCore}{View On GitHub}}
+		\item Library that provides a simple interface to encode and decode text using various algorithms.
+		\item CD pipeline packages it as a NuGet package for easy integration into any .NET project.
+	\end{rSubsection}
+
+	\begin{rSubsection}{CV Automatization}{}{CI/CD using GitHub Actions}{\href{https://github.com/nahu02/CV}{View On GitHub}}
+		\item GitHub repository with an automated workflow, that renders my resume from a \LaTeX{} file to make the process of updating it and tracking the changes easier.
 		\item This document is the output of that process.
 	\end{rSubsection}
 

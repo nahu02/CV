@@ -161,18 +161,3 @@
 	\end{list}
 	\vspace{0.5em} % Vertical whitespace after the end of the list
 }
-
-%----------------------------------------------------------------------------------------
-%	PROjeCTS FORMATTING
-%----------------------------------------------------------------------------------------
-
-% TODO: Implement this environment that will be used for personal/school projects
-% \newenvironment{rProjectsection}[2]{ % 2 parameters: Project title, subtitle
-% 	\textbf{#1} % Bold title
-% 	\textit{#2} \hfill % Italic subtitle
-% 	\smallskip % Vertical whitespace
-% 	\begin{minipage}{\textwidth} % Create a minipage to contain the text
-% 		#1 % Output the entered text
-% 	\end{minipage}
-% 	\vspace{0.5em} % Vertical whitespace after the end of the list
-% }
