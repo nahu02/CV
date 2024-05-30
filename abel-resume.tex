@@ -28,6 +28,9 @@
 
 \usepackage[sfdefault]{FiraSans} % Use the Fira Sans font
 
+% TODO: migrate to cls file, make it look better
+\usepackage{hyperref} % Required for adding links
+
 %------------------------------------------------
 
 \name{Abel Nagy} % Your name to appear at the top
@@ -58,7 +61,7 @@
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
-%	WORK EXPERIENCE SECTION
+%	EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{Experience}
@@ -79,16 +82,20 @@
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
-%	TECHNICAL STRENGTHS SECTION
+%	PERSONAL AND SCHOOL PROJECTS SECTION
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{Technical Skills}
+\begin{rSection}{Personal and School Projects}
+	% TODO: Use the rProjectsection environment to list personal/school projects
 
-	\begin{tabular}{@{} >{\bfseries}l @{\hspace{6ex}} l @{}}
-		Programming Languages & C, C++, C\#, Java, Python \\
-		Databases             & MSSQL, Sybase, MongoDB    \\
-		Web Development       & Django
-	\end{tabular}
+	\begin{rSubsection}{\href{https://github.com/nahu02/EventSnap}{EventSnap}}{}{AI Android app}{}
+		\item A .NET MAUI Android app that uses Natural Language Processing to convert text into calendar events, for seamless calendar integration.
+	\end{rSubsection}
+
+	\begin{rSubsection}{\href{https://github.com/nahu02/CV}{CV Automatization}}{}{Automatization utilising GitHub Actions}{}
+		\item Created a GitHub repository with an automated workflow, that renders my resume from a \LaTeX{} file to make the process of updating it and tracking the changes easier.
+		\item This document is the output of that process.
+	\end{rSubsection}
 
 \end{rSection}
 
