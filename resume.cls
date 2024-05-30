@@ -41,6 +41,10 @@
 
 \usepackage{graphicx} % Required for including images
 
+\usepackage{hyperref} % Required for adding links
+
+\usepackage{xcolor} % Required for specifying custom colors (for the links)
+
 \pagestyle{empty} % Suppress headers and footers on all pages
 
 %----------------------------------------------------------------------------------------
@@ -56,6 +60,14 @@
 	right=0.75in, % Right margin
 	%showframe, % Uncomment to show how the type block is set on the page
 }
+
+%----------------------------------------------------------------------------------------
+%	LINK THEMING
+%----------------------------------------------------------------------------------------
+
+\definecolor{link-blue}{HTML}{0000EE}
+
+\hypersetup{colorlinks, breaklinks, urlcolor=link-blue, linkcolor=blue} % Set link colors
 
 %----------------------------------------------------------------------------------------
 %	NAME AND ADDRESS COMMANDS
