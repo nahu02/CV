@@ -53,12 +53,16 @@ jobs:
     
     steps:  
       - name: Download PDF artifact
+        id: download-artifact
         uses: actions/download-artifact@v4
         with:
-          path: $GITHUB_WORKSPACE/resume
+          name: resume
       
       - name: List files in current directory
         run: tree -a
+
+      - name: Echo download output
+        run: echo ${{ steps.download-artifact.outputs.download-path }}
 
       - name: Get the latest release number
         id: get_latest_release
@@ -79,6 +83,6 @@ jobs:
         with:
           tag: ${{ needs.build_latex.outputs.Version }}
           name: CV render v${{ steps.get_latest_release.outputs.next_release_number }}
-          artifacts: "resume/*"
+          artifacts: ${{ steps.download-artifact.outputs.download-path }}
           artifactErrorsFailBuild: true
           token: ${{ secrets.RELEASE_PUBLISH_TOKEN }}
