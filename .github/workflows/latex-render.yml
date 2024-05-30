@@ -55,7 +55,7 @@ jobs:
       - name: Download PDF artifact
         uses: actions/download-artifact@v4
         with:
-          path: ~/resume
+          path: $GITHUB_WORKSPACE/resume
       
       - name: List files in current directory
         run: tree -a
