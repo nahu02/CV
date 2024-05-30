@@ -61,7 +61,7 @@ jobs:
         id: get_latest_release
         run: |
           latest_release=$(curl --silent "https://api.github.com/repos/${{ github.repository }}/releases/latest" | jq -r '.name')
-          if [[ $latest_release =~ Release\ ([0-9]+) ]]; then
+          if [[ $latest_release =~ CV\ render\ v\ ([0-9]+) ]]; then
             release_number=${BASH_REMATCH[1]}
             next_release_number=$((release_number + 1))
           else
