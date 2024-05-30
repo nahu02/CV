@@ -79,4 +79,5 @@ jobs:
           tag: ${{ needs.build_latex.outputs.Version }}
           name: Release ${{ steps.get_latest_release.outputs.next_release_number }}
           artifacts: "resume/*"
+          artifactErrorsFailBuild: true
           token: ${{ secrets.RELEASE_PUBLISH_TOKEN }}
