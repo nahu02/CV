@@ -55,6 +55,15 @@ jobs:
       - name: Download PDF artifact
         id: download-artifact
         uses: actions/download-artifact@v4
+        with:
+          name: resume
+          path: artifacts
+
+      - name: Debug print artifact path and contents
+        run: |
+          echo ${{ steps.download-artifact.outputs.download-path }}
+          ls -l ${{ steps.download-artifact.outputs.download-path }}
+
       
       - name: Get the latest release number
         id: get_latest_release
