@@ -1,8 +1,7 @@
 # CV
 
-This is the repository for my CV. 
-
-The latest version of **my CV** can be found on the [Releases](https://github.com/nahu02/CV/releases) page.
+This is the repository for my CV.
+The latest version of it can be found on the [releases](https://github.com/nahu02/CV/releases) page.
 
 ## How it works
 
