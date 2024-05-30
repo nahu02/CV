@@ -39,7 +39,7 @@ jobs:
         with:
           output_dir: build
           main_latex_file: abel-resume.tex
-          ctan_packages: ebgaramond parskip
+          ctan_packages: fira parskip
 
       - name: Upload PDF as Artifact
         uses: actions/upload-artifact@v2
