@@ -2,6 +2,9 @@ name: LateX to PDF
 
 on:
   push:
+    paths:
+      - '**.cls'
+      - '**.tex'
     branches: 
       - main
 
