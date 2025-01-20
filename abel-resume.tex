@@ -35,7 +35,7 @@
 % You can use the \address command up to 3 times for 3 different addresses or pieces of contact information
 % Any new lines (\\) you use in the \address commands will be converted to symbols, so each address will appear as a single line.
 
-\address{25, Csata utca \\ 1135 Budapest, Hungary} % Main address
+% \address{25, Csata utca \\ 1135 Budapest, Hungary} % Main address
 
 \address{(+36)~$\cdot$~302335345 \\ nahu1002@gmail.com} % Contact information
 
@@ -44,40 +44,42 @@
 \begin{document}
 
 %----------------------------------------------------------------------------------------
-%	EDUCATION SECTION
-%----------------------------------------------------------------------------------------
-
-\begin{rSection}{Education}
-
-	\begin{rSubsection}{Budapest University of Technology and Economics}{Exp. January 2025}{Bachelor in Computer Engineering}{Budapest, HU}
-		\item Developed a strong foundation in Object-Oriented Programming, Algorithms and Data Structures, Software Engineering and Design, IT Security, Artificial Intelligence, Mobile and Web Development
-		\item As a member of the International Mentor Team, I managed a team of 7 mentors assisting foreign students with Hungarian medical care
-	\end{rSubsection}
-
-\end{rSection}
-
-%----------------------------------------------------------------------------------------
 %	EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{Experience}
 
+	\begin{rSubsection}{Bright Future AI Services}{July 2024 - }{Developer}{Remote}
+		\item Enhanced queries by 50\% using hybrid search and indexes in a Milvus database
+		\item Implemented AI-driven automation for product descriptions, saving 20+ hours work each month
+		\item Developed a full-stack admin sandbox for AI chatbot testing using React/TypeScript
+		\item Gained practical experience with Python, TypeScript, React, AWS Lambda, Milvus, and Docker
+	\end{rSubsection}
+
 	\begin{rSubsection}{BlackRock}{June 2023 - May 2024}{Technical Intern}{Budapest, HU}
 		\item Rebased python code of a financial model to use a library increasing its efficiency by over 30\%
-		\item Automated the process of regression testing, saving 20+ hours of manual work
 		\item Developed a graph visualizer for a modelling tool, speeding up the onboarding of 60+ users
-		\item Created unit tests for various parts of the codebase, increasing code coverage by 20\%
-		\item Updated 127+ million incorrect records in a production database
 		\item Compressed 3+ GB data to 600 MB, speeding up uploads by over 80\%
 		\item Gained practical experience with Python, Pandas, SAP ASE, Git and Azure Boards
 	\end{rSubsection}
 
 	\begin{rSubsection}{Ifjusagi Nomad Klub}{March 2021 - September 2021}{Project Coordinator, Facilitator}{Budapest, HU}
-		\item Coordinated 2 Youth Exchanges, evaluated to 94/100 and 98/100 points
-		\item Both projects were marked as Good Practice by the National Agency
+		\item Coordinated 2 Youth Exchanges, evaluated to 94/100 and 98/100 points and marked as "Good Practice"
 		\item Arranged travel and accommodation for 114 participants over 23 days
-		\item Documented the steps to implement a Youth Exchange streamlining the work of coworkers
 		\item Led workshops for 56 youth (aged 15-20) on digital literacy, project management, and public speaking
+	\end{rSubsection}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+	\begin{rSubsection}{Budapest University of Technology and Economics}{January 2025}{Bachelor in Computer Engineering}{Budapest, HU}
+		\item Developed a strong foundation in Algorithms and Data Structures, Object-Oriented Programming, Declarative Programming, Software Engineering and Design, IT Security, AI, Mobile and Web Development
+		\item As a group leader in the International Mentor Team, managed a team of 7 mentors assisting foreign students with Hungarian medical care
 	\end{rSubsection}
 
 \end{rSection}
@@ -89,31 +91,31 @@
 \begin{rSection}{Personal and School Projects}
 
 	\begin{rSubsection}{EventSnap}{}{AI Android app}{\href{https://github.com/nahu02/EventSnap}{View On GitHub}}
-		\item .NET MAUI Android app that uses Natural Language Processing to parse text into calendar events.
-		\item Intuitive UI that allows users to easily add events to any calendar app.
+		\item .NET MAUI Android app that uses Natural Language Processing to parse text into calendar events and easily add them to any calendar app
 	\end{rSubsection}
 
 	\begin{rSubsection}{EncoderHub Core}{}{.NET class library}{\href{https://github.com/nahu02/EncoderHubCore}{View On GitHub}}
-		\item Library that provides a simple interface to encode and decode text using various algorithms.
-		\item CD pipeline packages it as a NuGet package for easy integration into any .NET project.
+		\item Library that provides a simple interface to encode and decode text using various algorithms
+		\item CD pipeline packages it as a NuGet package for easy integration into any .NET project
 	\end{rSubsection}
 
 	\begin{rSubsection}{CV Automatization}{}{CI/CD using GitHub Actions}{\href{https://github.com/nahu02/CV}{View On GitHub}}
-		\item GitHub repository with an automated workflow, that renders my resume from a \LaTeX{} file to make the process of updating it and tracking the changes easier.
-		\item This document is the output of that process.
+		\item Automated workflow to render and version control this resume using GitHub Actions and \LaTeX{}
 	\end{rSubsection}
 
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
-%	LANGUAGES SECTION
+%	TECHNICAL STRENGTHS SECTION
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{Languages}
+\begin{rSection}{Technical Skills}
 
 	\begin{tabular}{@{} >{\bfseries}l @{\hspace{6ex}} l @{}}
-		English   & Fluent         \\
-		Hungarian & Native speaker
+		Computer Languages      & Python, C\#, TypeScript, JavaScript, Elixir             \\
+		Infrastructure \& Cloud & Docker, AWS Lambda, GitHub                              \\
+		Databases               & MySQL, Microsoft SQL, Milvus, SAP ASE                   \\
+		Tools                   & Git, Azure Boards, Visual Studio Code, Jupyter, PyCharm \\
 	\end{tabular}
 
 \end{rSection}
