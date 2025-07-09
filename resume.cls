@@ -56,8 +56,8 @@
 \geometry{
 	top=0.4in, % Top margin
 	bottom=0.4in, % Bottom margin
-	left=0.5in, % Left margin
-	right=0.5in, % Right margin
+	left=0.4in, % Left margin
+	right=0.4in, % Right margin
 	%showframe, % Uncomment to show how the type block is set on the page
 }
 
