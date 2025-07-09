@@ -57,7 +57,7 @@
 	top=0.4in, % Top margin
 	bottom=0.4in, % Bottom margin
 	left=0.4in, % Left margin
-	right=0.4in, % Right margin
+	right=0.3in, % Right margin
 	%showframe, % Uncomment to show how the type block is set on the page
 }
 
