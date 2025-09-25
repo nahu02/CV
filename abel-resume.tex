@@ -27,6 +27,7 @@
 ]{resume} % Use the resume class
 
 \usepackage[sfdefault]{FiraSans} % Use the Fira Sans font
+\usepackage{needspace} % Package to prevent page breaks within sections
 
 %------------------------------------------------
 
@@ -36,12 +37,67 @@
 % Any new lines (\\) you use in the \address commands will be converted to symbols, so each address will appear as a single line.
 
 % \address{31, Kaj Munks Vej \\ 8260 Aarhus, Denmark} % Main address
+\address{Aarhus, Denmark} % Location
 
 \address{(+45)~$\cdot$~71652183 \\ abel@katabel.eu} % Contact information
 
 %----------------------------------------------------------------------------------------
 
 \begin{document}
+
+%----------------------------------------------------------------------------------------
+%	PROFILE BLOCK
+%----------------------------------------------------------------------------------------
+
+\begin{center}
+\fbox{\begin{minipage}{0.9\textwidth}
+\centering
+\vspace{0.5em}
+Computer Science professional with extensive experience in project management, international coordination, and youth training initiatives. Proven track record in documentation, structured file management, and stakeholder communication across multicultural environments. Skilled in workshop design, recruitment coordination, and progress tracking for complex international projects. Strong background in dissemination activities including social media, presentations, and structured reporting. Experienced in pilot program coordination and administrative compliance. Available for position around 15 October 2025. Fluent in English with proven international collaboration experience.
+\vspace{0.5em}
+\end{minipage}}
+\end{center}
+\bigskip
+
+%----------------------------------------------------------------------------------------
+%	KEY SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Key Skills}
+	\begin{minipage}[t]{0.48\textwidth}
+		\begin{itemize}
+			\item Scheduling \& progress tracking
+			\item Workshop materials \& surveys
+			\item Recruitment \& coordination
+			\item Content drafting for social media, newsletters, presentations
+			\item Documentation \& structured reporting
+		\end{itemize}
+	\end{minipage}
+	\hfill
+	\begin{minipage}[t]{0.48\textwidth}
+		\begin{itemize}
+			\item Deadline tracking \& administrative compliance
+			\item Stakeholder communication
+			\item Dissemination \& outreach events
+			\item Participatory experiment design
+			\item International partner coordination
+		\end{itemize}
+	\end{minipage}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	RELEVANT EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Relevant Experience}
+
+	\begin{rSubsection}{Ifjusagi Nomad Klub}{Mar 2021 - Sep 2021}{Project Coordinator, Facilitator}{Budapest, HU}
+		\item Coordinated 2 Youth Exchanges with 3 international partners and 10+ key stakeholders
+		\item Arranged travel and accommodation for 114 participants over 23 days
+		\item Planned and led workshops for 56 youth (aged 15-20) on digital literacy, project management, public speaking
+	\end{rSubsection}
+
+\end{rSection}
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
@@ -51,6 +107,7 @@
 
 	\begin{rSubsection}{Aarhus University}{Aug 2025 - Jul 2027 (exp.)}{Master of Science in Computer Science}{Aarhus, DK}
 		\item Learning about human-computer interaction, cryptology, and software development in general
+		\item Focus on HCI and responsible AI applications relevant to democratic participation and hybrid intelligence systems
 	\end{rSubsection}
 
 	\begin{rSubsection}{Budapest University of Technology and Economics}{Sep 2021 - Jan 2025}{Bachelor of Science in Computer Engineering}{Budapest, HU}
@@ -61,10 +118,22 @@
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
-%	EXPERIENCE SECTION
+%	LANGUAGES SECTION
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{Experience}
+\begin{rSection}{Languages}
+	\begin{tabular}{@{} >{\bfseries}l @{\hspace{6ex}} l @{}}
+		English    & Fluent    \\
+		Hungarian  & Native    \\
+		Danish     & Beginner (taking lessons)  \\
+	\end{tabular}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	ADDITIONAL WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Additional Work Experience}
 
 	\begin{rSubsection}{Bright Future AI Services}{Jul 2024 - Sep 2025}{Developer}{Remote}
 		\item Implemented AI-driven automation for product descriptions, saving 20+ hours work each month
@@ -78,11 +147,20 @@
 		\item Gained experience with agile methodologies, Python, Pandas, regression testing, SQL, Git and Azure Boards
 	\end{rSubsection}
 
-	\begin{rSubsection}{Ifjusagi Nomad Klub}{Mar 2021 - Sep 2021}{Project Coordinator, Facilitator}{Budapest, HU}
-		\item Coordinated 2 Youth Exchanges with 3 international partners and 10+ key stakeholders
-		\item Arranged travel and accommodation for 114 participants over 23 days
-		\item Planned and led workshops for 56 youth (aged 15-20) on digital literacy, project management, public speaking
-	\end{rSubsection}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Technical Skills}
+
+	\begin{tabular}{@{} >{\bfseries}l @{\hspace{6ex}} l @{}}
+		Computer Languages      & Python, C\#, TypeScript, JavaScript, Elixir             \\
+		Collaboration Tools     & Git, Slack, Visual Studio Code, Jupyter, PyCharm, Azure Boards \\
+		Infrastructure \& Cloud & Docker, AWS Lambda, CloudFlare Workers, GitHub Actions                              \\
+		Documentation Tools     & \LaTeX{}, Markdown, Jupyter Notebooks, Survey platforms \\
+	\end{tabular}
 
 \end{rSection}
 
@@ -107,17 +185,11 @@
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
-%	TECHNICAL STRENGTHS SECTION
+%	INTERESTS SECTION
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{Technical Skills}
-
-	\begin{tabular}{@{} >{\bfseries}l @{\hspace{6ex}} l @{}}
-		Computer Languages      & Python, C\#, TypeScript, JavaScript, Elixir             \\
-		Infrastructure \& Cloud & Docker, AWS Lambda, CloudFlare Workers, GitHub                              \\
-		Tools                   & Git, Slack, Visual Studio Code, Jupyter, PyCharm \\
-	\end{tabular}
-
+\begin{rSection}{Interests}
+	Passionate about hybrid intelligence systems, youth empowerment, and participatory democracy. Committed to inclusive technology design that bridges human creativity with AI capabilities. Advocate for transparent and democratic approaches to AI transition in society.
 \end{rSection}
 
 %----------------------------------------------------------------------------------------

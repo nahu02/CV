@@ -45,6 +45,8 @@
 
 \usepackage{xcolor} % Required for specifying custom colors (for the links)
 
+\usepackage{needspace} % Required for preventing page breaks within sections
+
 \pagestyle{empty} % Suppress headers and footers on all pages
 
 %----------------------------------------------------------------------------------------
@@ -132,10 +134,17 @@
 
 % Defines the rSection environment for the major sections within the CV
 \newenvironment{rSection}[1]{ % The single parameter is for the section title
+	\needspace{8\baselineskip} % Ensure at least 8 lines of space available for section title and first item
+	\penalty-200 % Encourage page break before section if needed
 	\medskip % Vertical whitespace
+	\penalty10000 % Absolutely prevent page break before section title
 	\MakeUppercase{\textbf{#1}} % Section title
+	\penalty10000 % Absolutely prevent page break after section title
 	\medskip % Vertical whitespace
+	\penalty10000 % Absolutely prevent page break before horizontal rule
 	\hrule % Horizontal rule
+	\penalty10000 % Absolutely prevent page break after horizontal rule
+	\nobreak % Additional break prevention
 	\begin{list}{}{ % List to indent the entire content of the section
 			\setlength{\leftmargin}{1.5em} % Indent to the left of the list
 		}
@@ -149,11 +158,15 @@
 %----------------------------------------------------------------------------------------
 
 \newenvironment{rSubsection}[4]{ % 4 parameters: company name, year(s) employed, job title and location
+	\needspace{6\baselineskip} % Ensure at least 6 lines of space available, or move to next page
+	\penalty10000 % Absolutely prevent page break before this section
 	\textbf{#1} \hfill {#2} % Bold company name and date to the right
 	\ifthenelse{\equal{#3}{}}{}{ % If the third parameter is empty, don't output the job title and location line
+		\penalty10000 % Absolutely prevent page break between company and job title
 		\\ % Job title and location on a new line
 		\textit{#3} \hfill \textit{#4} % Output job title and location
 	}%
+	\penalty10000 % Absolutely prevent page break before bullet points
 	\smallskip % Vertical whitespace
 	\begin{list}{$\cdot$}{\leftmargin=0em} % \cdot used for bullets, no indentation
 		\setlength{\itemsep}{-0.5em} \vspace{-0.5em} % Reduce vertical spacing between items in the list for a tighter look
