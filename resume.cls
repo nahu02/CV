@@ -77,6 +77,31 @@
 
 \newcommand{\name}[1]{\renewcommand{\name}{#1}} % Defines the \name command to set the user's name
 
+% Profile picture command for overlay positioning
+\newcommand{\profilepicture}[1]{
+	\vspace{-3.5cm} % Move up to overlap with the header
+	\hfill
+	\raisebox{0pt}[\height][0pt]{%
+		\makebox[0pt][r]{%
+			\includegraphics[width=3.5cm,height=4cm,keepaspectratio]{#1}%
+		}%
+	}
+	\vspace{0.2cm} % Add some space before the next section
+}
+
+% Profile block command for styling the main profile text
+\newcommand{\profileblock}[1]{
+	\begin{center}
+	\fbox{\begin{minipage}{0.9\textwidth}
+	\centering
+	\vspace{0.5em}
+	#1
+	\vspace{0.5em}
+	\end{minipage}}
+	\end{center}
+	\bigskip
+}
+
 \newcommand{\addressSep}{$\diamond$} % Set default address separator to a diamond symbol
 
 % One, two or three address lines can be specified
