@@ -161,3 +161,17 @@
 	\end{list}
 	\vspace{0.5em} % Vertical whitespace after the end of the list
 }
+
+%----------------------------------------------------------------------------------------
+%	PERSONAL PROJECT FORMATTING
+%----------------------------------------------------------------------------------------
+
+\newenvironment{projSubsection}[3]{ % 3 parameters: project name, description, github link url
+	\textbf{#1} -- {#2} \hfill \href{#3}{View On GitHub} % Bold project name, dash, description, link to the right
+	\smallskip % Vertical whitespace
+	\begin{list}{$\cdot$}{\leftmargin=0em} % \cdot used for bullets, no indentation
+		\setlength{\itemsep}{-0.5em} \vspace{-0.5em} % Reduce vertical spacing between items in the list for a tighter look
+		}{
+	\end{list}
+	\vspace{0.5em} % Vertical whitespace after the end of the list
+}
