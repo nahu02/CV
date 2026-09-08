@@ -41,7 +41,6 @@ jobs:
           root_file: abel-resume.tex
           working_directory: .
           args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode -synctex=1 -output-directory=build
-          pre_compile: "tlmgr install fira parskip"
 
       - name: Upload PDF as Artifact
         uses: actions/upload-artifact@v4
