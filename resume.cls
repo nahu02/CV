@@ -54,10 +54,10 @@
 \usepackage{geometry} % Required for adjusting page dimensions and margins
 
 \geometry{
-	top=0.4in, % Top margin
-	bottom=0.4in, % Bottom margin
-	left=0.4in, % Left margin
-	right=0.3in, % Right margin
+	top=0.3in, % Top margin
+	bottom=0.2in, % Bottom margin
+	left=0.3in, % Left margin
+	right=0.2in, % Right margin
 	%showframe, % Uncomment to show how the type block is set on the page
 }
 
@@ -168,6 +168,17 @@
 
 \newenvironment{projSubsection}[3]{ % 3 parameters: project name, description, github link url
 	\textbf{#1} -- {#2} \hfill \href{#3}{View On GitHub} % Bold project name, dash, description, link to the right
+	\smallskip % Vertical whitespace
+	\begin{list}{$\cdot$}{\leftmargin=0em} % \cdot used for bullets, no indentation
+		\setlength{\itemsep}{-0.5em} \vspace{-0.5em} % Reduce vertical spacing between items in the list for a tighter look
+		}{
+	\end{list}
+	\vspace{0.5em} % Vertical whitespace after the end of the list
+}
+
+% no github link
+\newenvironment{projSubsection2}[2]{ % 2 parameters: project name, description
+	\textbf{#1} -- {#2} % Bold project name, dash, description
 	\smallskip % Vertical whitespace
 	\begin{list}{$\cdot$}{\leftmargin=0em} % \cdot used for bullets, no indentation
 		\setlength{\itemsep}{-0.5em} \vspace{-0.5em} % Reduce vertical spacing between items in the list for a tighter look
