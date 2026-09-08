@@ -1,6 +1,7 @@
 name: LateX to PDF
 
 on:
+  workflow_dispatch:
   push:
     paths:
       - '**.cls'
