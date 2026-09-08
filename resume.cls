@@ -53,11 +53,12 @@
 
 \usepackage{geometry} % Required for adjusting page dimensions and margins
 
+% smaller than 0.4, 0.4, 0.4, 0.3 fails github action build
 \geometry{
-	top=0.3in, % Top margin
-	bottom=0.2in, % Bottom margin
-	left=0.3in, % Left margin
-	right=0.2in, % Right margin
+	top=0.4in, % Top margin
+	bottom=0.4in, % Bottom margin
+	left=0.4in, % Left margin
+	right=0.3in, % Right margin
 	%showframe, % Uncomment to show how the type block is set on the page
 }
 
